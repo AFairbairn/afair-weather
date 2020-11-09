@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+:root {
+    --primary-bg-color: #1A1A1A;
+    --secondary-bg-color: #E0E0E0;
+    --hover-color: #2E2F33;
+    --primary-txt-color: #eeeeee;
+    --secondary-txt-color: #2E2F33;
+    --tertiary-text-color: #949494;
+    --primary-accent-color: #FD4239;
+    --secondary-accent-color: #83A7C5;
+    --tertiary-accent-color: #A611C4;
+    --special-accent-color: #FF4081;
+    background-color: #1A1A1A;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    height: 100vh;
+    background: url(../background.jpg), no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+#data__frame {
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    left: 0;
+    padding: 0;
+    margin: 0 4em 0 4em;
+}
+
+.nav {
+    padding-bottom: 2em;
+}
+
+#place {
+    padding-left: 2em;
+}
+
+.search__field {
+    border: none;
+    background: var(--primary-txt-color);
+    opacity: 0.5;
+}
+
+.search__icon {
+    color: var(--primary-txt-color);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.home__btn {
+    color: var(--primary-txt-color);
+    position: absolute;
+    left: 0;
+    top: 1em;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.weather__btn {
+    color: var(--primary-txt-color);
+    position: absolute;
+    top: 1em;
+    z-index: 3;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dateTime {
+    position: relative;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.clock {
+    font-family: 'Roboto';
+    padding: 2em 0 0 0;
+    font-weight: 200;
+    color: var(--primary-txt-color);
+}
+
+.time {
+    font-size: 5em;
+}
+
+.second {
+    font-size: 3em;
+}
+
+.today {
+    font-size: 2.5em;
+    padding-left: 1em;
+}
+
+.calDate {
+    font-size: 2.5em;
+}
+
+.current {
+    margin: 3em 0 0 0;
+    position: relative;
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 100;
+    color: var(--primary-txt-color);
+}
+
+.extended {
+    position: relative;
+    width: 100%;
+}
+
+.currDet {
+    font-size: 1.8em;
+}
+
+#precipIcon {
+    padding-left: 2em;
+}
+.precip {
+    padding-left: .2em;
+}
+
+.temperature {
+    font-size: 8em;
+}
+
+.details {
+    display: inline-block;
+    margin: 0 0 0 6em;
+    font-size: 1.2em;
+}
+
+.top {
+    margin: 0;
+    padding: .5em;
+}
+
+.bottom {
+    margin: 0;
+    padding: .5em;
+}
+
+.extraDetails {
+    padding: 0 .5em 0 1.5em;
+}
+
+.forecast {
+    margin: 0;
+    width: 100%; 
+}
+
+.forecast h1 {
+    font-size: 1.5em;
+    font-family: 'Roboto';
+    font-weight: 100;
+    color: var(--primary-txt-color);
+    border-bottom: 1px solid var(--primary-txt-color);
+}
+
+.hourly__container {
+    color: var(--primary-txt-color);
+    position: relative;
+    margin: 0 0 0 0;
+    width: 100%;
+    height: 30vh;
+}
+
+.hourly {
+    position: relative;
+}
+
+.fiveDay {
+    padding: 3em 0 3em 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Roboto';
+    font-weight: 100;
+    text-align: center;
+    color: var(--primary-txt-color);
+}
+
+.day {
+    display: inline-block;
+    width: 15%;
+}
+
+.weekDay {
+    font-size: 1.5em;
+}
+
+.day i {
+    color: var(--primary-txt-color);
+    display: block;
+    padding: .5em;
+    font-size: 2em;
+}
+
+.day .high {
+    color: var(--primary-txt-color);
+}
+
+.day .low {
+    color: var(--secondary-accent-color);
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+}
+
+#home__map {
+    width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+@media only screen and (max-height: 900px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    * {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .details {
+        margin: 0;
+    }
+}

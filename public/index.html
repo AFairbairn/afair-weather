@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather Clock</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/clock.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/weather-icons.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/weather-icons-wind.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto:100" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script src="./weather.js"></script>
+    <script src="./clock.js"></script>
+</head>
+
+<body>
+    <div id="data__frame">
+        <div class="nav">
+
+            <a href="index.html" class="weather__btn"><i class="fas fa-cloud-sun-rain fa-2x"></i><span id="place"></span></a>
+
+        </div>
+        <div id="dateTime" class="dateTime">
+            <div id="clock" class="clock">
+                <span id="time" class="time"></span>
+                <span id="second" class="second"></span>
+                <span id="today" class="today"></span>
+                <span id="calDate" class="calDate"></span>
+            </div>
+        </div>
+
+        <div id="current" class="current">
+            <div class="currDet">
+                <i id="icon" class="wi"></i>
+                <span id="info" class="info"></span>
+                <i id="precipIcon" class="wi wi-raindrops"></i>
+                <span id="precip" class="precip"></span>
+            </div>
+            <div id="extended" class="extend">
+                <span id="temperature" class="temperature"></span>
+
+                <div id="details" class="details">
+                    <div class="top">
+                        <span class="extraDetails">Feels Like</span>
+                        <span id="feelsLike"></span>
+                        <span class="extraDetails">Wind</span>
+                        <i id="windDir" class="wi wi-wind"></i>
+                        <span id="wind"></span>
+                        <span class="extraDetails">Visibility</span>
+                        <span id="visibility"></span>
+                    </div>
+                    <div class="bottom">
+                        <span class="extraDetails">Pressure</span>
+                        <span id="barometer"></span>
+                        <span class="extraDetails">Humidity</span>
+                        <span id="humidity"></span>
+                        <span class="extraDetails">Dew Point</span>
+                        <span id="dewPoint"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="forecast" class="forecast">
+            <h1>Forecast</h1>
+            <div id="hourly__container" class="hourly__container">
+                <canvas id="hourly"></canvas>
+            </div>
+        </div>
+        <div id="fiveDay" class="fiveDay">
+            <div class="day">
+                <div class="weekDay"></div>
+                <i class="icon wi"></i>
+                <span class="high"></span>
+                <span class="low"></span>
+            </div>
+            <div class="day">
+                <div class="weekDay"></div>
+                <i class="icon wi"></i>
+                <span class="high"></span>
+                <span class="low"></span>
+            </div>
+            <div class="day">
+                <div class="weekDay"></div>
+                <i class="icon wi"></i>
+                <span class="high"></span>
+                <span class="low"></span>
+            </div>
+            <div class="day">
+                <div class="weekDay"></div>
+                <i class="icon wi"></i>
+                <span class="high"></span>
+                <span class="low"></span>
+            </div>
+            <div class="day">
+                <div class="weekDay"></div>
+                <i class="icon wi"></i>
+                <span class="high"></span>
+                <span class="low"></span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -8,14 +8,14 @@ weekday[4] = "Thu";
 weekday[5] = "Fri";
 weekday[6] = "Sat";
 
-function clock(){
+function clock() {
     today = new Date();
     h = today.getHours();
     m = today.getMinutes();
     s = today.getSeconds();
     wkDay = today.getDay();
     day = today.getDate();
-    month = today.getMonth();
+    month = today.getMonth() + 1;
     year = today.getFullYear();
     h = checkTime(h)
     m = checkTime(m);
@@ -29,10 +29,10 @@ function clock(){
 }
 
 function checkTime(i) {
-    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
     return i;
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     clock();
 });

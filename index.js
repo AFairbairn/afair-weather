@@ -3,7 +3,7 @@ const fetch = require("node-fetch");
 require('dotenv').config();
 const opencage = require('opencage-api-client');
 const app = express();
-const PORT = proces.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => console.log("Server Started"));
 app.use(express.static("public"));
